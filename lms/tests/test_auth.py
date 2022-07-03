@@ -74,5 +74,5 @@ class TestLogin:
         assert response.status_code == 401
         assert (
             response.json().get("detail")
-            == "Your authentication credentials is incorrect."
+            == "Password Incorrect"
         )
